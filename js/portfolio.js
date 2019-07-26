@@ -1,9 +1,10 @@
-jQuery(function ($) {
-  'use strict';
-  (function () {
-    $('.preloader').delay(200).fadeOut('slow');
-  }());
-})
+// Pre-Loader
+$(window).load(function () {
+  // Animate loader off screen
+  $(".preloader").fadeOut("slow");
+});
+
+// Smooth Scrolling
 $(document).ready(function () {
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
