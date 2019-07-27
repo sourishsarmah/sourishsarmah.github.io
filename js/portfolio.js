@@ -1,8 +1,9 @@
-// Pre-Loader
-$(window).load(function () {
-  // Animate loader off screen
-  $(".preloader").fadeOut("slow");
-});
+jQuery(function ($) {
+  'use strict';
+  (function () {
+    $('.preloader').delay(200).fadeOut('slow');
+  }());
+})
 
 // Smooth Scrolling
 $(document).ready(function () {
