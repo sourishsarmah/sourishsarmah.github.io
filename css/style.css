@@ -277,7 +277,7 @@ footer.footer {
 }
 
 .bg-primary {
-    background-color: #1d9f94 !important
+    background-color: #ffffff !important
 }
 
 a,
@@ -328,7 +328,7 @@ a>code {
 .dp {
   width: 300px;
   height: auto;
-  border: #26a69a 4px solid;
+  border: #ffffff 4px solid;
   border-radius: 50%;
 }
 
