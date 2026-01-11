@@ -26,18 +26,24 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', newTheme);
 });
 
-// Form submission handling
+// Form submission handling with improved UX
 const contactForm = document.getElementById('contact-form');
 contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     
     const submitButton = contactForm.querySelector('button');
     const originalText = submitButton.textContent;
-    submitButton.textContent = 'Sending...';
+    
+    // Loading state
+    submitButton.textContent = 'Preparing email...';
     submitButton.disabled = true;
+    submitButton.style.opacity = '0.7';
+    submitButton.style.cursor = 'wait';
+
+    // Simulate short delay for better UX
+    await new Promise(resolve => setTimeout(resolve, 800));
 
     try {
-        // Send email directly to your address using mailto
         const formData = new FormData(contactForm);
         const name = formData.get('name');
         const email = formData.get('email');
@@ -45,32 +51,43 @@ contactForm.addEventListener('submit', async (e) => {
         
         window.location.href = `mailto:sourishsarmah@gmail.com?subject=Portfolio Contact from ${name}&body=${message}%0D%0A%0D%0AFrom: ${email}`;
         
-        contactForm.reset();
-        alert('Opening your email client...');
+        // Success state
+        submitButton.textContent = 'Email Client Opened!';
+        submitButton.style.backgroundColor = 'var(--accent-primary)'; // Use CSS var if possible, else green
+        
+        setTimeout(() => {
+            contactForm.reset();
+            submitButton.textContent = originalText;
+            submitButton.disabled = false;
+            submitButton.style.opacity = '1';
+            submitButton.style.cursor = 'pointer';
+            submitButton.style.backgroundColor = '';
+        }, 3000);
+        
     } catch (error) {
-        alert('Error opening email client. Please try again or contact directly via email.');
-    } finally {
+        alert('Error opening email client. Please try again.');
         submitButton.textContent = originalText;
         submitButton.disabled = false;
     }
 });
 
-// Intersection Observer for scroll animations
-const observerOptions = {
-    threshold: 0.1
-};
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate');
-        }
+// Scroll to Top functionality
+const scrollTopBtn = document.querySelector('.scroll-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollTopBtn.classList.add('visible');
+    } else {
+        scrollTopBtn.classList.remove('visible');
+    }
+});
+
+scrollTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
     });
-}, observerOptions);
-
-// Observe all sections
-document.querySelectorAll('section').forEach(section => {
-    observer.observe(section);
 });
 
 // Mobile Navigation
@@ -94,3 +111,42 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         icon.classList.remove('fa-times');
     });
 }); 
+// Set current year in footer
+const yearElement = document.getElementById('current-year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}
+
+// Enhanced Scroll Animations
+document.addEventListener('DOMContentLoaded', () => {
+    // Observer for sections
+    const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, { threshold: 0.15 }); // Slightly higher threshold
+
+    document.querySelectorAll('section').forEach(section => {
+        section.classList.add('fade-in');
+        sectionObserver.observe(section);
+        
+        // Dynamic Staggering
+        // Timelines & Projects
+        const largeItems = section.querySelectorAll('.timeline-item, .project-card');
+        largeItems.forEach((item, index) => {
+            item.style.setProperty('--delay', `${(index + 1) * 0.2}s`);
+        });
+
+        // Skills (Batching or faster stagger)
+        const skillItems = section.querySelectorAll('.skill-item');
+        skillItems.forEach((item, index) => {
+            // Stagger in batches of 10 or just fast sequential
+            const delay = 0.1 + (index * 0.05);
+            // Cap max delay to prevent waiting too long for last item
+            const cappedDelay = Math.min(delay, 1.5); 
+            item.style.setProperty('--delay', `${cappedDelay}s`);
+        });
+    });
+});

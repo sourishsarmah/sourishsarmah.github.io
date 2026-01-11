@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Software Engineer Portfolio</title>
+    <meta name="description" content="Senior Software Engineer specializing in scalable distributed systems, AI agents, and Python microservices. Portfolio of Sourish Sarmah.">
+    <meta name="keywords" content="Software Engineer, Python, Distributed Systems, AI, Machine Learning, Portfolio, Sourish Sarmah">
+    <meta name="author" content="Sourish Sarmah">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sourishsarmah.github.io/">
+    <meta property="og:title" content="Sourish Sarmah - Senior Software Engineer">
+    <meta property="og:description" content="Building scalable distributed systems and AI-driven solutions. View my portfolio and projects.">
+    <meta property="og:image" content="assets/profile.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sourishsarmah.github.io/">
+    <meta property="twitter:title" content="Sourish Sarmah - Senior Software Engineer">
+    <meta property="twitter:description" content="Building scalable distributed systems and AI-driven solutions. View my portfolio and projects.">
+    <meta property="twitter:image" content="assets/profile.png">
+
+    <title>Sourish Sarmah - Senior Software Engineer</title>
+    <link rel="icon" type="image/png" href="assets/profile.png">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -19,8 +40,8 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="theme-toggle">
@@ -39,7 +60,7 @@
                 </div>
                 <div class="intro-text-container">
                     <h1>Hi, I'm <span class="highlight">Sourish Sarmah</span></h1>
-                    <p class="intro-text">Senior Software Engineer with 5+ years of experience in building scalable distributed systems and ML pipelines. Specialized in Python microservices, real-time data processing, and cloud-native architectures. Currently developing AI-driven automation and high-performance backend solutions at Tailorbird. Passionate about system optimization, scalable infrastructure, and driving innovation through technology.</p>
+                    <p class="intro-text">Senior Software Engineer with 5+ years of experience in building scalable distributed systems and ML pipelines. Specialized in Python microservices, real-time data processing, and cloud-native architectures. Currently developing AI-driven automation and high-performance backend solutions at Agentic Private Markets. Passionate about system optimization, scalable infrastructure, and driving innovation through technology.</p>
                     <div class="cta-buttons">
                         <a href="#contact" class="cta-primary">Contact Me</a>
                         <a href="./assets/Sourish-Resume-No-Contact.pdf" class="cta-secondary" download="Sourish-Sarmah-Resume.pdf">Download Resume</a>
@@ -57,16 +78,35 @@
                 <div class="timeline-content">
                     <div class="timeline-header">
                         <h3>Senior Software Engineer</h3>
-                        <h4>Tailorbird</h4>
-                        <p class="timeline-date">Sept 2023 - Present</p>
+                        <h4>Agentic Private Markets</h4>
+                        <p class="timeline-date">Sept 2025 - Present</p>
                     </div>
                     <div class="timeline-details">
                         <ul class="responsibilities">
-                            <li>Architected and led development of RFP portal enabling end-to-end bidding process for Construction Contractors</li>
-                            <li>Enhanced platform performance by optimizing database queries and indexes, significantly improving API responsiveness</li>
-                            <li>Implemented AI-driven automation using OpenAI's ChatGPT API for generating contextual user instructions</li>
-                            <li>Drove cross-functional collaboration with Product, Design, and QA teams to align development with business goals</li>
-                            <li>Led code reviews and established best practices to maintain high code quality and platform maintainability</li>
+                            <li>Designed an Agentic microservice platform to automate private-equity market analysis, delivering multi-stage multi-agent pipelines.</li>
+                            <li><strong>Artifact Voice Chat:</strong> Built a real-time multimodal system enabling users to generate complex documents via voice. Architected a "Thin Orchestrator" pattern to bridge low-latency voice streams (OpenAI Realtime API) with high-latency backend pipelines.</li>
+                            <li>Implemented a "Persist-Before-Emit" consistency protocol ensuring database state remains synchronized with ephemeral real-time audio/text streams, preventing data loss during disconnects.</li>
+                            <li>Developed a dynamic RAG context resolution layer that injects scoped project knowledge and conversation history into the AI session while suppressing echo events.</li>
+                            <li>Engineered a financial Artifact Agent that transforms raw private-company data into auto-generated visual outputs (charts, tables) with modular renderers.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Tailorbird</h4>
+                        <p class="timeline-date">Sept 2023 - July 2025</p>
+                    </div>
+                    <div class="timeline-details">
+                        <ul class="responsibilities">
+                            <li>Spearheaded the development of the RFP portal, streamlining the end-to-end bidding process for construction contractors.</li>
+                            <li>Designed and implemented "Magic Folder", an AI-powered document parser using LlamaParse and RAG with OpenAI GPT models to extract insights from property assessment reports.</li>
+                            <li>Integrated an LLM workflow to extract invoiced items from contractor invoices and automatically load data, reducing processing time by 90%.</li>
+                            <li>Developed robust audit logging using database triggers and session metadata for platform-wide transparency.</li>
+                            <li>Provided technical leadership for a team of 3 engineers, guiding architecture and upholding code quality.</li>
                         </ul>
                     </div>
                 </div>
@@ -81,10 +121,10 @@
                     </div>
                     <div class="timeline-details">
                         <ul class="responsibilities">
-                            <li>Designed serverless architecture for medical data synchronization using AWS Lambda, API Gateway, and SAM</li>
-                            <li>Implemented Redis caching strategy reducing system latency by 25x for frequently accessed data</li>
-                            <li>Optimized PostgreSQL Timescale database design and indexes achieving 60-90x query performance improvement</li>
-                            <li>Led Python to Golang migration resulting in 20x faster API responses and improved load handling</li>
+                            <li>Built a serverless architecture for syncing mission-critical medical data using AWS Lambda, API Gateway, and AWS SAM.</li>
+                            <li>Reduced system latency by 25x through Redis-based caching for frequently accessed data.</li>
+                            <li>Optimized PostgreSQL TimescaleDB design and indexes, resulting in 60-90x better query performance.</li>
+                            <li>Migrated a microservice from Python to Golang, resulting in 20x faster API responses and improved load handling.</li>
                         </ul>
                     </div>
                 </div>
@@ -99,17 +139,17 @@
                     </div>
                     <div class="timeline-details">
                         <ul class="responsibilities">
-                            <li>Built real-time notification microservice using Socket.io and message queues for seamless UI updates</li>
-                            <li>Developed scalable data export system with multipart upload for efficient cloud storage integration</li>
-                            <li>Implemented MLOps pipeline using Azure ML Studio for custom model training and deployment</li>
-                            <li>Led backend development of retail application using Django with PostgreSQL Full-Text Search capabilities</li>
-                            <li>Architected ETL pipelines and data platform for TataCliq's e-commerce operations</li>
+                            <li>Developed a microservice using Socket.IO to deliver real-time notifications by consuming messages from a queue.</li>
+                            <li>Built an asynchronous data export feature for large-scale data to cloud storage using multipart upload.</li>
+                            <li>Implemented and integrated custom ML model training functionality using Azure ML Studio MLOps pipeline.</li>
+                            <li>Built data platform and ETL pipelines for TataCliq and engineered datasets using AWS Glue.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -148,6 +188,14 @@
             <div class="skill-category">
                 <h3>Frameworks & Tools</h3>
                 <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Langchain</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>LangGraph</span>
+                    </div>
                     <div class="skill-item">
                         <i class="fas fa-bolt"></i>
                         <span>FastAPI</span>
@@ -255,17 +303,17 @@
         <div class="projects-grid">
             <div class="project-card">
                 <div class="project-header">
-                    <h3>Drowsiness Detector</h3>
+                    <h3>OCDify</h3>
                     <div class="project-links">
-                        <a href="https://github.com/BugHoppers/drowsiness-detector" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://ocdify.vyanlabs.in" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <p>A real-time drowsiness detection system using computer vision to monitor driver alertness. Uses facial landmarks detection to analyze eye movements and blink patterns to prevent accidents due to drowsy driving.</p>
+                <p>An AI-powered file organization tool for Mac that automatically sorts, categorizes, and declutters desktops. Operates 100% offline using local LLMs for privacy-first file classification and continuous directory monitoring.</p>
                 <div class="project-tech">
-                    <span>Python</span>
-                    <span>OpenCV</span>
-                    <span>dlib</span>
-                    <span>Computer Vision</span>
+                    <span>Swift</span>
+                    <span>Local LLM</span>
+                    <span>macOS</span>
+                    <span>CoreML</span>
                 </div>
             </div>
 
@@ -276,76 +324,12 @@
                         <a href="https://github.com/BugHoppers/gods_eye" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <p>A Linux security tool that replaces traditional sudo password authentication with facial recognition. Enhances system security by allowing users to authenticate sudo commands using their face, providing a seamless and secure alternative to password-based authentication.</p>
+                <p>A Linux security tool replacing traditional sudo password authentication with facial recognition. Enhances system security by allowing seamless authentication for sudo commands using real-time face detection.</p>
                 <div class="project-tech">
                     <span>Python</span>
                     <span>OpenCV</span>
-                    <span>face_recognition</span>
-                    <span>Linux System</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Feel Safe</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/hackabit18/bughopper" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <p>A personal safety application that uses machine learning to detect potential threats and send automated alerts to emergency contacts. Includes features like location tracking and panic button.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>Machine Learning</span>
-                    <span>GPS</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>TURS Website</h3>
-                    <div class="project-links">
-                        <a href="http://turobotics.pythonanywhere.com/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p>Developed the official website for Tezpur University Robotics Society (TURS). Features event management, member profiles, project showcases, and a dynamic content management system.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>PostgreSQL</span>
-                    <span>Bootstrap</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Colorize</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/sourishsarmah/colorize" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <p>An image processing tool that automatically colorizes black and white images using deep learning. Implements state-of-the-art colorization algorithms for natural-looking results.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>TensorFlow</span>
-                    <span>OpenCV</span>
-                    <span>Deep Learning</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>Find My Food</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/BugHoppers/FindMyFood" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <p>A location-based restaurant recommendation system that helps users discover nearby food options based on their preferences and dietary requirements.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>Google Maps API</span>
-                    <span>PostgreSQL</span>
+                    <span>Face Recognition</span>
+                    <span>Linux Security</span>
                 </div>
             </div>
         </div>
@@ -381,13 +365,18 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2025 Sourish Sarmah. All rights reserved.</p>
+            <p>&copy; <span id="current-year">2025</span> Sourish Sarmah. All rights reserved.</p>
             <div class="social-links">
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
