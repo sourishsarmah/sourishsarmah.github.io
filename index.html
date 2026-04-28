@@ -1,383 +1,305 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Senior Software Engineer specializing in scalable distributed systems, AI agents, and Python microservices. Portfolio of Sourish Sarmah.">
-    <meta name="keywords" content="Software Engineer, Python, Distributed Systems, AI, Machine Learning, Portfolio, Sourish Sarmah">
+    <meta name="description" content="Sourish Sarmah — Senior Software Engineer with six years building backends, LLM tooling, and real-time orchestration systems.">
     <meta name="author" content="Sourish Sarmah">
-    
-    <!-- Open Graph / Facebook -->
+    <meta name="theme-color" content="#0c0c0d">
+
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sourishsarmah.github.io/">
-    <meta property="og:title" content="Sourish Sarmah - Senior Software Engineer">
-    <meta property="og:description" content="Building scalable distributed systems and AI-driven solutions. View my portfolio and projects.">
-    <meta property="og:image" content="assets/profile.png">
+    <meta property="og:title" content="Sourish Sarmah — Senior Software Engineer">
+    <meta property="og:description" content="Six years building backends, LLM tooling, and real-time orchestration systems.">
+    <meta property="og:image" content="assets/profile.jpg">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sourishsarmah.github.io/">
-    <meta property="twitter:title" content="Sourish Sarmah - Senior Software Engineer">
-    <meta property="twitter:description" content="Building scalable distributed systems and AI-driven solutions. View my portfolio and projects.">
-    <meta property="twitter:image" content="assets/profile.png">
-
-    <title>Sourish Sarmah - Senior Software Engineer</title>
-    <link rel="icon" type="image/png" href="assets/profile.png">
+    <title>Sourish Sarmah</title>
+    <link rel="icon" type="image/png" href="assets/profile.jpg">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo">Sourish Sarmah</div>
-            <button class="mobile-nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="theme-toggle">
-                <i class="fas fa-sun"></i>
-                <i class="fas fa-moon"></i>
-            </button>
-        </nav>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="#top" class="brand">Sourish Sarmah</a>
+            <nav class="topnav">
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#stack">Stack</a>
+                <a href="#contact">Contact</a>
+                <button class="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <!-- Intro Section -->
-    <section id="home" class="intro-section">
-        <div class="intro-content">
-            <div class="profile-container">
-                <div class="profile-image">
-                    <img src="assets/profile.png" alt="Sourish Sarmah">
-                </div>
-                <div class="intro-text-container">
-                    <h1>Hi, I'm <span class="highlight">Sourish Sarmah</span></h1>
-                    <p class="intro-text">Senior Software Engineer with 5+ years of experience in building scalable distributed systems and ML pipelines. Specialized in Python microservices, real-time data processing, and cloud-native architectures. Currently developing AI-driven automation and high-performance backend solutions at Agentic Private Markets. Passionate about system optimization, scalable infrastructure, and driving innovation through technology.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="cta-primary">Contact Me</a>
-                        <a href="./assets/Sourish-Resume-No-Contact.pdf" class="cta-secondary" download="Sourish-Sarmah-Resume.pdf">Download Resume</a>
-                    </div>
+    <main id="top">
+        <!-- Intro -->
+        <section class="intro">
+            <div class="intro-grid">
+                <img src="assets/profile.jpg" alt="Sourish Sarmah" class="avatar">
+                <div class="intro-text">
+                    <p class="eyebrow">Senior Software Engineer</p>
+                    <h1>Sourish Sarmah</h1>
+                    <p class="location">Based in India · Building at <a href="https://www.agenticprivatemarkets.ai" target="_blank" rel="noopener">Agentic Private Markets</a></p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
-        <h2>Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Senior Software Engineer</h3>
-                        <h4>Agentic Private Markets</h4>
-                        <p class="timeline-date">Sept 2025 - Present</p>
-                    </div>
-                    <div class="timeline-details">
-                        <ul class="responsibilities">
-                            <li>Designed an Agentic microservice platform to automate private-equity market analysis, delivering multi-stage multi-agent pipelines.</li>
-                            <li><strong>Artifact Voice Chat:</strong> Built a real-time multimodal system enabling users to generate complex documents via voice. Architected a "Thin Orchestrator" pattern to bridge low-latency voice streams (OpenAI Realtime API) with high-latency backend pipelines.</li>
-                            <li>Implemented a "Persist-Before-Emit" consistency protocol ensuring database state remains synchronized with ephemeral real-time audio/text streams, preventing data loss during disconnects.</li>
-                            <li>Developed a dynamic RAG context resolution layer that injects scoped project knowledge and conversation history into the AI session while suppressing echo events.</li>
-                            <li>Engineered a financial Artifact Agent that transforms raw private-company data into auto-generated visual outputs (charts, tables) with modular renderers.</li>
+            <div class="bio">
+                <p>
+                    I'm a software engineer with six years of experience building production
+                    backends — most recently focused on real-time orchestration, LLM tooling,
+                    and high-throughput data infrastructure. I write primarily in Python and
+                    Go, with the occasional detour into C++ and Swift.
+                </p>
+                <p>
+                    Today I lead backend engineering for agentic AI products at Agentic
+                    Private Markets, where I architect multi-agent research pipelines and the
+                    streaming inference engines that power them. Before that I led platform
+                    engineering at Tailorbird, shipped serverless healthcare infrastructure
+                    at Biofourmis, and built data pipelines at Inviz AI.
+                </p>
+                <p>
+                    I care about systems that stay quietly correct under pressure — the kind
+                    that don't make it into release notes because they don't break.
+                </p>
+            </div>
+
+            <div class="intro-actions">
+                <a href="mailto:sourishsarmah@gmail.com" class="link-arrow">
+                    Get in touch
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </a>
+                <span class="dot-sep">·</span>
+                <a href="./assets/Sourish-Resume-No-Contact.pdf" class="link-arrow" download="Sourish-Sarmah-Resume.pdf">
+                    Download resume
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                </a>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section id="experience" class="section">
+            <h2 class="section-title">Experience</h2>
+
+            <ol class="roles">
+                <li class="role">
+                    <div class="role-when">2025 — Now</div>
+                    <div class="role-body">
+                        <h3 class="role-title">
+                            Senior Software Engineer
+                            <span class="role-at">·</span>
+                            <a href="https://www.agenticprivatemarkets.ai" target="_blank" rel="noopener">Agentic Private Markets</a>
+                        </h3>
+                        <p class="role-summary">
+                            Building the agentic backbone of a private-markets research platform —
+                            orchestration engines, multi-agent pipelines, and streaming inference layers
+                            that turn unstructured filings into structured intelligence.
+                        </p>
+                        <ul class="role-points">
+                            <li>Engineered a multi-agent research orchestration pipeline that decomposes complex queries with LLMs, executes parallel web and file searches, and synthesizes responses within strict token budgets.</li>
+                            <li>Architected a real-time AI agent orchestration engine processing 50+ streaming event types from OpenAI's Responses API, with dynamic tool resolution via MCP servers and Redis-backed conversation state.</li>
+                            <li>Built a financial Artifact Agent that turns raw private-company data into auto-generated charts, tables, and comparisons via modular renderers and RAG-based file search.</li>
                         </ul>
+                        <div class="role-stack">Python · FastAPI · LangGraph · OpenAI · MCP · Redis · PostgreSQL</div>
                     </div>
-                </div>
-            </div>
+                </li>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Senior Software Engineer</h3>
-                        <h4>Tailorbird</h4>
-                        <p class="timeline-date">Sept 2023 - July 2025</p>
-                    </div>
-                    <div class="timeline-details">
-                        <ul class="responsibilities">
-                            <li>Spearheaded the development of the RFP portal, streamlining the end-to-end bidding process for construction contractors.</li>
-                            <li>Designed and implemented "Magic Folder", an AI-powered document parser using LlamaParse and RAG with OpenAI GPT models to extract insights from property assessment reports.</li>
-                            <li>Integrated an LLM workflow to extract invoiced items from contractor invoices and automatically load data, reducing processing time by 90%.</li>
-                            <li>Developed robust audit logging using database triggers and session metadata for platform-wide transparency.</li>
-                            <li>Provided technical leadership for a team of 3 engineers, guiding architecture and upholding code quality.</li>
+                <li class="role">
+                    <div class="role-when">2023 — 2025</div>
+                    <div class="role-body">
+                        <h3 class="role-title">
+                            Senior Software Engineer
+                            <span class="role-at">·</span>
+                            <a href="https://tailorbird.com" target="_blank" rel="noopener">Tailorbird</a>
+                        </h3>
+                        <p class="role-summary">
+                            Owned the platform end-to-end for a construction-tech company — RFP portals,
+                            AI document parsing, and the plumbing that turns a fragmented contractor
+                            workflow into one cohesive product.
+                        </p>
+                        <ul class="role-points">
+                            <li>Spearheaded the RFP portal end-to-end, streamlining the bidding process for construction contractors and consolidating fragmented vendor workflows.</li>
+                            <li>Designed Magic Folder, an AI document parser leveraging LlamaParse and RAG over OpenAI GPT models to extract critical insights from property assessment reports.</li>
+                            <li>Shipped an LLM workflow that extracts line items from contractor invoices and auto-loads them into projects, reducing manual processing time by 90%.</li>
+                            <li>Provided technical leadership for a team of three engineers, owning architecture decisions and the code-quality bar.</li>
                         </ul>
+                        <div class="role-stack">Python · Django · PostgreSQL · LlamaParse · OpenAI</div>
                     </div>
-                </div>
-            </div>
+                </li>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Software Engineer</h3>
-                        <h4>Biofourmis</h4>
-                        <p class="timeline-date">March 2022 - July 2023</p>
-                    </div>
-                    <div class="timeline-details">
-                        <ul class="responsibilities">
-                            <li>Built a serverless architecture for syncing mission-critical medical data using AWS Lambda, API Gateway, and AWS SAM.</li>
-                            <li>Reduced system latency by 25x through Redis-based caching for frequently accessed data.</li>
-                            <li>Optimized PostgreSQL TimescaleDB design and indexes, resulting in 60-90x better query performance.</li>
-                            <li>Migrated a microservice from Python to Golang, resulting in 20x faster API responses and improved load handling.</li>
+                <li class="role">
+                    <div class="role-when">2022 — 2023</div>
+                    <div class="role-body">
+                        <h3 class="role-title">
+                            Software Engineer
+                            <span class="role-at">·</span>
+                            <a href="https://www.biofourmis.com" target="_blank" rel="noopener">Biofourmis</a>
+                        </h3>
+                        <p class="role-summary">
+                            Worked on remote patient monitoring infrastructure where latency, correctness,
+                            and uptime were non-negotiable. Most of the work here was about extracting
+                            orders of magnitude from systems that already existed.
+                        </p>
+                        <ul class="role-points">
+                            <li>Built a serverless sync architecture for mission-critical medical data using AWS Lambda, API Gateway, and AWS SAM.</li>
+                            <li>Reduced system latency 25× via Redis-based caching for hot paths.</li>
+                            <li>Tuned PostgreSQL TimescaleDB schema and indexes — yielding 60–90× faster queries.</li>
+                            <li>Migrated a microservice from Python to Go, resulting in 20× faster API responses.</li>
                         </ul>
+                        <div class="role-stack">Go · Python · AWS Lambda · TimescaleDB · Redis</div>
                     </div>
-                </div>
-            </div>
+                </li>
 
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <div class="timeline-header">
-                        <h3>Software Development Engineer</h3>
-                        <h4>Inviz AI</h4>
-                        <p class="timeline-date">July 2020 - March 2022</p>
-                    </div>
-                    <div class="timeline-details">
-                        <ul class="responsibilities">
-                            <li>Developed a microservice using Socket.IO to deliver real-time notifications by consuming messages from a queue.</li>
-                            <li>Built an asynchronous data export feature for large-scale data to cloud storage using multipart upload.</li>
-                            <li>Implemented and integrated custom ML model training functionality using Azure ML Studio MLOps pipeline.</li>
-                            <li>Built data platform and ETL pipelines for TataCliq and engineered datasets using AWS Glue.</li>
+                <li class="role">
+                    <div class="role-when">2020 — 2022</div>
+                    <div class="role-body">
+                        <h3 class="role-title">
+                            Software Development Engineer
+                            <span class="role-at">·</span>
+                            <a href="https://www.invizai.com" target="_blank" rel="noopener">Inviz AI</a>
+                        </h3>
+                        <p class="role-summary">
+                            First role out of university — across data platforms, MLOps, and real-time
+                            services. The breadth was the gift; everything since has been a sharpening.
+                        </p>
+                        <ul class="role-points">
+                            <li>Built a Socket.IO microservice delivering real-time notifications by consuming queued messages and managing live socket sessions.</li>
+                            <li>Shipped an async export feature for large-scale data to cloud storage in multiple formats using multipart upload.</li>
+                            <li>Integrated a custom ML model training feature for Loopr through an Azure ML Studio MLOps pipeline.</li>
+                            <li>Built data platform and ETL pipelines for TataCliq, powering several production ML models via AWS Glue.</li>
                         </ul>
+                        <div class="role-stack">Python · Socket.IO · Azure ML · AWS Glue · PySpark</div>
                     </div>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Selected Projects</h2>
+
+            <ul class="projects">
+                <li class="project">
+                    <a href="https://wayvio.vyanlabs.in" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-head">
+                            <h3>Wayvio</h3>
+                            <span class="project-domain">wayvio.vyanlabs.in</span>
+                        </div>
+                        <p>An AI travel concierge that plans full trips in seconds — personalized day-by-day itineraries, interactive maps, and on-the-fly refinement.</p>
+                        <div class="project-stack">Next.js · LLM Agents · Maps</div>
+                    </a>
+                </li>
+
+                <li class="project">
+                    <a href="https://ocdify.vyanlabs.in" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-head">
+                            <h3>OCDify</h3>
+                            <span class="project-domain">ocdify.vyanlabs.in</span>
+                        </div>
+                        <p>A macOS tool that sorts, categorizes, and declutters desktops. Operates entirely offline using local LLMs for privacy-first file classification.</p>
+                        <div class="project-stack">Swift · Local LLM · macOS · CoreML</div>
+                    </a>
+                </li>
+
+                <li class="project">
+                    <a href="https://github.com/BugHoppers/gods_eye" target="_blank" rel="noopener" class="project-link">
+                        <div class="project-head">
+                            <h3>God's Eye</h3>
+                            <span class="project-domain">github.com/BugHoppers</span>
+                        </div>
+                        <p>A Linux security experiment replacing sudo password authentication with facial recognition, wired into PAM for seamless privileged-command auth.</p>
+                        <div class="project-stack">Python · OpenCV · PAM · Linux</div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Stack -->
+        <section id="stack" class="section">
+            <h2 class="section-title">Stack</h2>
+
+            <dl class="stack">
+                <div class="stack-row">
+                    <dt>Languages</dt>
+                    <dd>Python, Go, C/C++, SQL, JavaScript</dd>
+                </div>
+                <div class="stack-row">
+                    <dt>AI &amp; LLM</dt>
+                    <dd>LangChain, LangGraph, OpenAI Responses API, MCP, RAG, LlamaParse</dd>
+                </div>
+                <div class="stack-row">
+                    <dt>Frameworks</dt>
+                    <dd>FastAPI, Flask, Django, Node.js, PySpark</dd>
+                </div>
+                <div class="stack-row">
+                    <dt>Backend Tools</dt>
+                    <dd>Socket.IO, Kafka, RabbitMQ, Airflow, Docker, Git</dd>
+                </div>
+                <div class="stack-row">
+                    <dt>Databases</dt>
+                    <dd>PostgreSQL, TimescaleDB, MongoDB, DynamoDB, Redshift, MySQL, Redis</dd>
+                </div>
+                <div class="stack-row">
+                    <dt>Cloud</dt>
+                    <dd>AWS, Azure, GCP</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- Education -->
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+
+            <div class="education">
+                <div class="role-when">2016 — 2020</div>
+                <div class="role-body">
+                    <h3 class="role-title">B.Tech, Computer Science &amp; Engineering</h3>
+                    <p class="role-summary">Tezpur University, India · GPA 8.3 / 10.</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <!-- Contact -->
+        <section id="contact" class="section section-last">
+            <h2 class="section-title">Contact</h2>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="skills-container">
-            <div class="skill-category">
-                <h3>Programming Languages</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-golang"></i>
-                        <span>Golang</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-code"></i>
-                        <span>C/C++</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>SQL/NoSQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-java"></i>
-                        <span>Java</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                </div>
-            </div>
+            <p class="contact-lead">
+                Open to senior backend &amp; AI engineering roles, technical leadership
+                opportunities, and considered collaborations. Email is the fastest channel.
+            </p>
 
-            <div class="skill-category">
-                <h3>Frameworks & Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fas fa-brain"></i>
-                        <span>Langchain</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-project-diagram"></i>
-                        <span>LangGraph</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-bolt"></i>
-                        <span>FastAPI</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-flask"></i>
-                        <span>Flask</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-python"></i>
-                        <span>Django</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-fire"></i>
-                        <span>PySpark</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-node-js"></i>
-                        <span>NodeJs</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-plug"></i>
-                        <span>SocketIO</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-stream"></i>
-                        <span>Kafka</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>RabbitMQ</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-docker"></i>
-                        <span>Docker</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-brain"></i>
-                        <span>OpenAI API</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-wind"></i>
-                        <span>Airflow</span>
-                    </div>
-                </div>
-            </div>
+            <ul class="contact-links">
+                <li>
+                    <a href="mailto:sourishsarmah@gmail.com">
+                        <span class="contact-key">Email</span>
+                        <span class="contact-val">sourishsarmah@gmail.com</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/sourishsarmah/" target="_blank" rel="noopener">
+                        <span class="contact-key">LinkedIn</span>
+                        <span class="contact-val">in/sourishsarmah</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/sourishsarmah" target="_blank" rel="noopener">
+                        <span class="contact-key">GitHub</span>
+                        <span class="contact-val">@sourishsarmah</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
 
-            <div class="skill-category">
-                <h3>Databases</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-leaf"></i>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-amazon"></i>
-                        <span>DynamoDB</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-chart-bar"></i>
-                        <span>Redshift</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-database"></i>
-                        <span>MySQL</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fas fa-cube"></i>
-                        <span>Redis</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3>Cloud Services</h3>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-microsoft"></i>
-                        <span>Azure</span>
-                    </div>
-                    <div class="skill-item">
-                        <i class="fab fa-google"></i>
-                        <span>GCP</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>OCDify</h3>
-                    <div class="project-links">
-                        <a href="https://ocdify.vyanlabs.in" target="_blank"><i class="fas fa-external-link-alt"></i></a>
-                    </div>
-                </div>
-                <p>An AI-powered file organization tool for Mac that automatically sorts, categorizes, and declutters desktops. Operates 100% offline using local LLMs for privacy-first file classification and continuous directory monitoring.</p>
-                <div class="project-tech">
-                    <span>Swift</span>
-                    <span>Local LLM</span>
-                    <span>macOS</span>
-                    <span>CoreML</span>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-header">
-                    <h3>God's Eye</h3>
-                    <div class="project-links">
-                        <a href="https://github.com/BugHoppers/gods_eye" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <p>A Linux security tool replacing traditional sudo password authentication with facial recognition. Enhances system security by allowing seamless authentication for sudo commands using real-time face detection.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>OpenCV</span>
-                    <span>Face Recognition</span>
-                    <span>Linux Security</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <a href="mailto:sourishsarmah@gmail.com">sourishsarmah@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/sourishsarmah/" target="_blank">LinkedIn</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/sourishsarmah" target="_blank">GitHub</a>
-                </div>
-            </div>
-            <form id="contact-form" class="contact-form">
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <textarea name="message" placeholder="Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; <span id="current-year">2025</span> Sourish Sarmah. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Scroll to Top Button -->
-    <button class="scroll-to-top" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+        <footer class="footer">
+            <span>&copy; <span id="year">2026</span> Sourish Sarmah</span>
+        </footer>
+    </main>
 
     <script src="js/main.js"></script>
 </body>
-</html> 
+</html>
