@@ -15,7 +15,7 @@ Projects:
 
 - Supaintro (2026, https://supaintro.com): AI motion-graphics pipeline that turns a product URL into a branded launch film, using multimodal generation, voice synthesis, Remotion rendering and autoscaling AWS Fargate workers fed by PostgreSQL job queues.
 - OCDify (2025, https://ocdify.vyanlabs.in): privacy-first macOS desktop organiser running quantized local LLM inference entirely on-device.
-- Wayvio (https://wayvio.vyanlabs.in): AI travel concierge that plans day-by-day itineraries with maps and refinement.
+- Outstation (https://outstation.tech, formerly Wayvio): AI travel planner that builds day-by-day itineraries with interactive maps and on-the-fly refinement.
 - God's Eye (https://github.com/BugHoppers/gods_eye): Linux experiment replacing sudo passwords with facial recognition via PAM.
 
 Skills: Python, Go, SQL; FastAPI, Django, Flask, PySpark; LangChain, LangGraph, OpenAI APIs, RAG; Kafka, RabbitMQ, Airflow, Socket.IO; PostgreSQL, TimescaleDB, Redis, MongoDB, DynamoDB, Redshift, MySQL; Docker; AWS, Azure, GCP.

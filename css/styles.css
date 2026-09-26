@@ -213,23 +213,35 @@ main {
     gap: 32px;
 }
 
-h1 {
-    font-size: clamp(40px, 5.2vw, 64px);
-    line-height: 1.05;
-    font-weight: 400;
-    letter-spacing: -0.02em;
+.intro-side {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.h1-kicker {
+.portrait {
     display: block;
-    margin-bottom: 20px;
-    font-family: var(--sans);
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    line-height: 1.5;
-    color: var(--ink);
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    background: var(--rule-faint);
+}
+
+.name {
+    font-size: clamp(44px, 7vw, 92px);
+    line-height: 0.95;
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    margin-top: -0.08em;
+}
+
+.tagline {
+    font-size: clamp(22px, 2.4vw, 30px);
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    margin-top: -12px;
 }
 
 .lede {
@@ -307,6 +319,10 @@ h3 a {
     font-weight: 400;
     font-style: italic;
     color: var(--muted);
+}
+
+.role::before {
+    content: "— ";
 }
 
 .arrow {
@@ -390,33 +406,55 @@ h3 a {
     }
 
     .topbar {
-        min-height: 88px;
+        min-height: 0;
+        padding: 8px 0;
+        border-bottom: 1px solid var(--rule-faint);
     }
 
-    .topnav {
-        gap: 18px;
-    }
-
-    .topnav a.meta:not([href="#contact"]) {
+    /* The name is the page heading right below, so the brand would repeat it */
+    .brand {
         display: none;
     }
 
+    .topnav {
+        width: 100%;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .topnav a.meta {
+        font-size: 12px;
+        padding: 12px 0;
+    }
+
     .intro {
-        padding: 48px 0 80px;
+        padding: 36px 0 72px;
+    }
+
+    .intro-side {
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 18px;
+        margin-bottom: 20px;
+    }
+
+    .portrait {
+        width: 104px;
+        flex-shrink: 0;
+    }
+
+    .intro .row-body {
+        gap: 24px;
+    }
+
+    .tagline {
+        margin-top: -8px;
     }
 
     .intro .row-label,
     .entry .row-label,
     #contact .row-label {
         padding-top: 0;
-    }
-
-    .intro-meta span {
-        display: inline;
-    }
-
-    .intro-meta span + span::before {
-        content: " · ";
     }
 
     .lede { font-size: 19px; }
@@ -429,6 +467,17 @@ h3 a {
     .section-title { font-size: 28px; }
 
     h3 { font-size: 22px; }
+
+    /* Role on its own line instead of wrapping mid-title */
+    .role {
+        display: block;
+        margin-top: 2px;
+        font-size: 18px;
+    }
+
+    .role::before {
+        content: none;
+    }
 
     .contact-line { font-size: 28px; }
 }
