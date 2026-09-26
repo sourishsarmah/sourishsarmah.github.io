@@ -1,0 +1,33 @@
+# Sourish Sarmah
+
+> Sourish Sarmah is a backend and AI engineer based in India with six years of experience building production systems: multi-agent LLM pipelines, real-time orchestration and high-throughput data infrastructure, mostly in Python and Go. Tech Lead at Agentic Private Markets until May 2026; now open to senior backend and AI engineering roles.
+
+Contact: sourishsarmah@gmail.com · LinkedIn: https://www.linkedin.com/in/sourishsarmah/ · GitHub: https://github.com/sourishsarmah · Website: https://sourishsarmah.github.io/
+
+Experience:
+
+- Agentic Private Markets (India, remote), Sep 2025 – May 2026. Senior Software Engineer (Sep 2025 – Jan 2026), then Tech Lead (Jan – May 2026). Architected an Excel-like data grid with a streaming ingestion pipeline, a tool-orchestrated SQL execution layer and database-level row-level security, letting LLM agents run aggregations, joins and filters across enterprise-scale datasets with zero cross-tenant leakage. Led the company's SOC 2 compliance initiative. Built a multi-agent research orchestration pipeline (LLM query decomposition, parallel web and file search, deduplication, synthesis within token budgets) and a production realtime voice agent on OpenAI Realtime with streaming tool execution, interrupt handling and sub-second latency.
+- Tailorbird (India, remote), Senior Software Engineer, Sep 2023 – Jul 2025. Led development of the RFP portal for construction contractors; built an AI document parser using LlamaParse and retrieval-augmented generation over property assessment reports; built an LLM invoice-extraction workflow that reduced processing time by 90%; built platform-wide audit logging with database triggers; led a team of three engineers.
+- Biofourmis (Bangalore), Software Engineer, Mar 2022 – Jul 2023. Built a serverless medical-data sync architecture on AWS Lambda, API Gateway and AWS SAM; reduced latency 25x with Redis caching; improved PostgreSQL/TimescaleDB query performance 60–90x; migrated a microservice from Python to Go for 20x faster API responses.
+- Inviz AI (Bangalore), Software Development Engineer, Jul 2020 – Mar 2022. Built an MLOps model-training pipeline for Loopr on Azure ML Studio; built data platform and ETL pipelines for TataCliq on AWS Glue.
+
+Projects:
+
+- Supaintro (2026, https://supaintro.com): AI motion-graphics pipeline that turns a product URL into a branded launch film, using multimodal generation, voice synthesis, Remotion rendering and autoscaling AWS Fargate workers fed by PostgreSQL job queues.
+- OCDify (2025, https://ocdify.vyanlabs.in): privacy-first macOS desktop organiser running quantized local LLM inference entirely on-device.
+- Wayvio (https://wayvio.vyanlabs.in): AI travel concierge that plans day-by-day itineraries with maps and refinement.
+- God's Eye (https://github.com/BugHoppers/gods_eye): Linux experiment replacing sudo passwords with facial recognition via PAM.
+
+Skills: Python, Go, SQL; FastAPI, Django, Flask, PySpark; LangChain, LangGraph, OpenAI APIs, RAG; Kafka, RabbitMQ, Airflow, Socket.IO; PostgreSQL, TimescaleDB, Redis, MongoDB, DynamoDB, Redshift, MySQL; Docker; AWS, Azure, GCP.
+
+Education: B.Tech in Computer Science and Engineering, Tezpur University, India (2020).
+
+## Profile
+
+- [Website](https://sourishsarmah.github.io/): full portfolio page
+- [Résumé (PDF)](https://sourishsarmah.github.io/assets/Sourish-Resume-No-Contact.pdf): current résumé
+
+## Optional
+
+- [GitHub](https://github.com/sourishsarmah): code and open-source work
+- [LinkedIn](https://www.linkedin.com/in/sourishsarmah/): professional profile

@@ -1,0 +1,7 @@
+# Everyone is welcome: search engines, AI search/answer bots and AI training crawlers.
+# (Google, Bing, OAI-SearchBot, GPTBot, ChatGPT-User, Claude-SearchBot, ClaudeBot,
+#  Claude-User, PerplexityBot, etc. are all allowed by the rule below.)
+User-agent: *
+Allow: /
+
+Sitemap: https://sourishsarmah.github.io/sitemap.xml
