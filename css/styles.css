@@ -137,6 +137,8 @@ main {
     display: grid;
     grid-template-columns: var(--label-col) minmax(0, 1fr);
     column-gap: var(--col-gap);
+    /* Line each small label up with the first line of text beside it */
+    align-items: baseline;
 }
 
 .row-body {
@@ -199,8 +201,8 @@ main {
     padding: 120px 0 128px;
 }
 
-.intro .row-label {
-    padding-top: 0;
+.intro {
+    align-items: start;
 }
 
 .intro-meta span {
@@ -234,7 +236,8 @@ main {
     line-height: 0.95;
     font-weight: 400;
     letter-spacing: -0.03em;
-    margin-top: -0.08em;
+    /* Puts the cap height flush with the top of the portrait */
+    margin-top: 0.04em;
 }
 
 .tagline {
@@ -295,10 +298,6 @@ main {
     letter-spacing: -0.01em;
 }
 
-.entry .row-label {
-    padding-top: 6px;
-}
-
 .entry .row-body {
     display: flex;
     flex-direction: column;
@@ -322,7 +321,7 @@ h3 a {
 }
 
 .role::before {
-    content: "— ";
+    content: "· ";
 }
 
 .arrow {
@@ -346,10 +345,6 @@ h3 a {
 
 #contact {
     padding-bottom: 72px;
-}
-
-#contact .row-label {
-    padding-top: 10px;
 }
 
 #contact .row-body {
